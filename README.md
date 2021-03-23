@@ -19,7 +19,7 @@ git push --set-upstream origin your-branch-name
 ```
 
 4. Import kejari-waringin database to your local.
-5. Open up [http://localhost/your-website-name/].
+5. Open up [http://localhost/your-website-name/](http://localhost/).
 6. Login with kejari-waringin wordpress username and password.
 7. In your admin panel, go to Appearance > Themes > Kejari Waringin.
 8. Click "Activate".
