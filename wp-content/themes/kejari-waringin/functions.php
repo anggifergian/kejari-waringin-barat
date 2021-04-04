@@ -6,8 +6,16 @@
 if (!defined('KEJARI_DIR_PATH')) {
     define('KEJARI_DIR_PATH', untrailingslashit(get_template_directory()));
 }
-
 require_once KEJARI_DIR_PATH . '/inc/helpers/autoloader.php';
+
+/**
+ * KEJARI_THEME
+ */
+function kejari_get_theme_instance()
+{
+    \KEJARI_THEME\Inc\KEJARI_THEME::get_instance();
+}
+kejari_get_theme_instance();
 
 /**
  * WP KEJARI MENUS
@@ -44,7 +52,7 @@ function kejari_register_styles()
 add_action('wp_enqueue_scripts', 'kejari_register_styles');
 
 /**
- * WP SCRIPT
+ * WP KEJARI SCRIPT
  */
 function kejari_register_scripts()
 {
