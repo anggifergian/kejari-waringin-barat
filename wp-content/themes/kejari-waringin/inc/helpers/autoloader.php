@@ -19,6 +19,9 @@ function autoloader($resource = '')
      */
     $resource = str_replace($namespace_root, '', $resource);
 
+    /**
+     * Change KEJARI_THEME to kejari-theme
+     */
     $path = explode(
         '\\',
         str_replace('_', '-', strtolower($resource))
