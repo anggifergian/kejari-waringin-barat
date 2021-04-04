@@ -13,6 +13,8 @@ class KEJARI_THEME
         /**
          * Load Class
          */
+        Assets::get_instance();
+
         $this->setup_hooks();
     }
 
