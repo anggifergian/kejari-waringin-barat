@@ -11,4 +11,4 @@
 </head>
 
 <body <?php body_class(); ?>>
-    <?php get_template_part('components/navbar') ?>
+    <?php get_template_part('components/navbar'); ?>
