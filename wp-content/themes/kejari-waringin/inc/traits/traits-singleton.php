@@ -1,6 +1,6 @@
 <?php
 
-namespace KEJARI\Inc\Traits;
+namespace KEJARI_THEME\Inc\Traits;
 
 /**
  *
