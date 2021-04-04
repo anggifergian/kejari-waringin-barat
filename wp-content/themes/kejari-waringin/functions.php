@@ -1,5 +1,17 @@
 <?php
 
+/**
+ * KEJARI_DIR_PATH
+ */
+if (!defined('KEJARI_DIR_PATH')) {
+    define('KEJARI_DIR_PATH', untrailingslashit(get_template_directory()));
+}
+
+require_once KEJARI_DIR_PATH . '/inc/helpers/autoloader.php';
+
+/**
+ * WP KEJARI MENUS
+ */
 function kejari_menus()
 {
     $locations = array(
@@ -12,7 +24,7 @@ function kejari_menus()
 add_action('init', 'kejari_menus');
 
 /**
- * WP STYLE
+ * WP KEJARI STYLE
  */
 function kejari_register_styles()
 {
