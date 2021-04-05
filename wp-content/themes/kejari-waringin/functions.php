@@ -23,17 +23,3 @@ function kejari_get_theme_instance()
     \KEJARI_THEME\Inc\KEJARI_THEME::get_instance();
 }
 kejari_get_theme_instance();
-
-/**
- * WP KEJARI MENUS
- */
-function kejari_menus()
-{
-    $locations = array(
-        'primary' => "Desktop Navbar Top",
-        'footer' => "Footer Menu Items"
-    );
-
-    register_nav_menus($locations);
-}
-add_action('init', 'kejari_menus');
